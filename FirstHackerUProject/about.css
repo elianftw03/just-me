@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+p {
+    direction: rtl;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f4d5bb;
+}

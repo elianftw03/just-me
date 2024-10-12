@@ -1,0 +1,55 @@
+.title {
+    background-image: url(assets/set-different-bakery-product-top-260nw-1285928656.webp);
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    /* Better rounding */
+    border-width: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.specialties {
+    background-color: #f4d5bb;
+    /* softer pastel color */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #f0f8ff;
+    margin: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.specialties,
+.promise,
+.openinghrs,
+.location {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f4d5bb;
+    margin-bottom: 20px;
+}
+
+.title img {
+    max-width: 100%;
+    height: auto;
+}
+
+.randompic {
+    border-radius: 20px;
+    /* Rounded corners */
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 400px;
+    width: 100px;
+}

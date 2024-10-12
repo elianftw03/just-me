@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Elian's Bakery</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="title">
+        <h1>Welcome to Elian's Bakery Website!!</h1>
+        <p>At Sweet Delights, we believe every bite should be a moment of joy. Located in the heart of the city, we bake fresh, handcrafted treats daily. Whether you're craving a warm croissant, a delightful cupcake, or a slice of our signature cakes, we
+            have something to satisfy every sweet tooth.</p>
+    </div>
+
+    <div class="specialties">
+        <h3>Our Specialties:</h3>
+        <ul>
+            <li>Cupcakes – Indulge in our moist, fluffy cupcakes topped with delicious buttercream in a variety of flavors.</li>
+            <li>Pastries – From golden croissants to decadent danishes, our pastries are baked fresh every morning.</li>
+            <li>Custom Cakes – Celebrate any occasion with a custom-designed cake made to your taste and style.</li>
+        </ul>
+    </div>
+
+    <div class="promise">
+        <h3>Our Promise:</h3>
+        <p>We use only the finest ingredients in all our baked goods to ensure every bite is as delicious as it is beautiful. Whether you're stopping by for breakfast or planning a big event, Sweet Delights has you covered.</p>
+    </div>
+
+    <div class="randompic">
+        <img src="assets/set-different-bakery-product-top-260nw-1285928656.webp" alt="">
+    </div>
+
+    <div class="openinghrs">
+        <h3>Our Hours Of Operation:</h3>
+        <ol>
+            <li>Sunday to Thursday: 7:00 AM - 6:00 PM</li>
+            <li>Friday: 8:00 AM - 3:00 PM</li>
+            <li>Saturday(Shabbat): CLOSED!</li>
+        </ol>
+    </div>
+
+    <div class="location">
+        <h3>Our Location:</h3>
+        <p>Sderot Rothschild 1, Be'er Sheva, Israel</p>
+        <div id="map" style="height: 400px; width: 100%;"></div>
+
+    </div>
+
+
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdyiQLOpcxtqthgfI7QgnHcn9r4yb2DVw&callback=initMap"></script>
+
+    <script>
+        function initMap() {
+            var eliansBakery = {
+                lat: 31.240936,
+                lng: 34.801035
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: eliansBakery
+            });
+            var marker = new google.maps.Marker({
+                position: eliansBakery,
+                map: map
+            });
+        }
+    </script>
+</body>
+
+</html>

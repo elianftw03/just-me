@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta sname="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Elian's Bakery</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="signin">
+            <forms action="/login" method="POST">
+                <h2>Sign In Here:</h2>
+                <label id="userlabel" for="Username">Account:</label>
+                <input type="text" name="Username" id="Username" required placeholder="Enter your email or member ID">
+                <br>
+                <div class="forgotpass">
+                    <a href="https:www.alibaba.com">Forgot password?</a>
+                </div>
+                <label id="passlabel" for="password">Password:</label>
+
+                <input type="password" name="password" id="password" required placeholder="Enter Password">
+                </form>
+                <br>
+
+                <button type="submit">Sign in</button>
+                <br>
+                <div id="mobilesignincreateacc">
+                    <a id="signin" href="#">Mobile sign in</a>
+                    <a id="createacc" href="#">Create Account</a>
+                </div>
+                </form>
+        </div>
+    </div>
+</body>
+
+</html>
